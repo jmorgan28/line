@@ -18,7 +18,9 @@ int main() {
   
   clear_screen(s);
 
-  draw_line(0,0,250,250,s,c);
+  draw_line(0,0,400,340,s,c);
+  draw_line(90,300,150,499,s,c);
+  draw_line(250,250,375,290,s,c);
 
 
   display(s);
