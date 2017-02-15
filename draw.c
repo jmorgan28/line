@@ -6,7 +6,22 @@
 #include "draw.h"
 
 //Insert your line algorithm here
-void draw_line(int x0, int y0, int x1, int y1, screen s, color c, int deb) {
+void draw_line(int x0, int y0, int x1, int y1, screen s, color c){
+  int deb;
+  int m = (y0-y1)/(x0-x1);
+  if(m <= 1 && m> 0){
+    deb = 1; 
+  }
+  if(m >1){
+    deb = 2;
+  }
+  if(m < 0 && m > -1){
+    deb = 8; 
+  }
+  if(m <= -1){
+    deb = 7; 
+  }
+
   if(x0 > x1){
     int temp = x0;
     x0 = x1;
