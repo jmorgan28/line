@@ -106,13 +106,17 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c){
     }
   }
   if(deb == 21){
-    printf("got here");
+    if(y0 > y1){
+      int t = y1;
+      y1 = y0;
+      y0 = t;
+    }
     while(y0 <=y1){
       plot(s,c,x0,y0);
       y0 ++;
     }
   }
   
-   printf("got here pt 2"); 
+  
   
 }
