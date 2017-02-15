@@ -7,6 +7,14 @@
 
 //Insert your line algorithm here
 void draw_line(int x0, int y0, int x1, int y1, screen s, color c, int deb) {
+  if(x0 > x1){
+    int temp = x0;
+    x0 = x1;
+    x1 = temp;
+    temp = y0;
+    y0 = y1;
+    y1 = temp;
+  }
   if (deb == 1){
     int A = y1 - y0;
     int B = -1 * (x1 -x0);

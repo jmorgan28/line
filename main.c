@@ -18,10 +18,11 @@ int main() {
   
   clear_screen(s);
 
-  draw_line(80,80,500,50,s,c, 8);
-  draw_line(90,300,150,499,s,c,1);
-  draw_line(250,250,375,500,s,c,2);
-  draw_line(250,250,330,0,s,c,7);
+  draw_line(500,50,80,80,s,c, 8);
+  draw_line(150,499,90,300,s,c,1);
+  draw_line(375,500,250,250,s,c,2);
+  draw_line(330,0,250,250,s,c,7);
+  
 
 
   display(s);
