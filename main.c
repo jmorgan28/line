@@ -26,6 +26,8 @@ int main() {
   draw_line(250,250,480,500,s,c);
   draw_line(250,250,500,20,s,c);
   draw_line(250,250,480, 0,s,c);
+  draw_line(250,250,500,250,s,c);
+  draw_line(250,250,250,500,s,c);
   
 
 
