@@ -18,14 +18,14 @@ int main() {
   
   clear_screen(s);
 
-  //draw_line(500,50,80,80,s,c);
-  //draw_line(150,499,90,300,s,c);
-  //draw_line(375,500,250,250,s,c);
-  // draw_line(330,0,250,250,s,c);
-  draw_line(250,250,500,500,s,c);
-  draw_line(250,250,0,480,s,c);
-  draw_line(250,250,0,0,s,c);
+  //draw_line(200,100,80,150,s,c);
+  //draw_line(150,315,90,300,s,c);
+  //draw_line(330,500,250,250,s,c);
+  //draw_line(300,0,250,275,s,c);
+  draw_line(250,250,500,480,s,c);
+  draw_line(250,250,480,500,s,c);
   draw_line(250,250,500,20,s,c);
+  draw_line(250,250,480, 0,s,c);
   
 
 

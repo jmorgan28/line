@@ -8,11 +8,19 @@
 //Insert your line algorithm here
 void draw_line(int x0, int y0, int x1, int y1, screen s, color c){
   int deb;
-  int m = (y0-y1)/(x0-x1);
+  int skip = 0;
+  if(x0 == x1){
+    skip ++;
+    deb = 21;
+  }
+  double m;
+  if(!skip){
+  m = ((y0-y1) * 1.0)/(x0-x1);
+  }
   if(m <= 1 && m> 0){
     deb = 1; 
   }
-  if(m >1){
+  if(m > 1){
     deb = 2;
   }
   if(m < 0 && m > -1){
@@ -20,6 +28,9 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c){
   }
   if(m <= -1){
     deb = 7; 
+  }
+  if(m == 0){
+    deb = 20;
   }
 
   if(x0 > x1){
