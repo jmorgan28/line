@@ -43,6 +43,11 @@ int main() {
   draw_line(250,250,341,500,s,c);
   draw_line(250,250,500,78,s,c);
   draw_line(250,250,320,0,s,c);
+
+  draw_line(250,250,500,500,s,c);
+  draw_line(250,250,500,0,s,c);
+  draw_line(250,250,0,500,s,c);
+  draw_line(250,250,0,0,s,c);
   
  
 
